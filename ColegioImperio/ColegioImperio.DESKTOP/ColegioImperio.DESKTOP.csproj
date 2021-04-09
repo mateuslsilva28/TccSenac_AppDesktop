@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE563A54-6F80-4D9C-8845-CF6755735F6B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ColegioImperio.DESKTOP</RootNamespace>
+    <AssemblyName>ColegioImperio.DESKTOP</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ColegioImperio.DESKTOP.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sessao.cs" />
+    <Compile Include="TelaAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaAluno.Designer.cs">
+      <DependentUpon>TelaAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaAlunoCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaAlunoCadastro.Designer.cs">
+      <DependentUpon>TelaAlunoCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaFuncionario.Designer.cs">
+      <DependentUpon>TelaFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaFuncionarioCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaFuncionarioCadastro.Designer.cs">
+      <DependentUpon>TelaFuncionarioCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaInicial.Designer.cs">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaMateria.Designer.cs">
+      <DependentUpon>TelaMateria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaNotas.Designer.cs">
+      <DependentUpon>TelaNotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaNovaSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaNovaSenha.Designer.cs">
+      <DependentUpon>TelaNovaSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaProfessor.Designer.cs">
+      <DependentUpon>TelaProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaProfessorCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaProfessorCadastro.Designer.cs">
+      <DependentUpon>TelaProfessorCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaProfessorMateriaTurma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaProfessorMateriaTurma.Designer.cs">
+      <DependentUpon>TelaProfessorMateriaTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaSala.Designer.cs">
+      <DependentUpon>TelaSala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaTurma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaTurma.Designer.cs">
+      <DependentUpon>TelaTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaTurmaCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaTurmaCadastro.Designer.cs">
+      <DependentUpon>TelaTurmaCadastro.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TelaAluno.resx">
+      <DependentUpon>TelaAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaAlunoCadastro.resx">
+      <DependentUpon>TelaAlunoCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaFuncionario.resx">
+      <DependentUpon>TelaFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaFuncionarioCadastro.resx">
+      <DependentUpon>TelaFuncionarioCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaInicial.resx">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaMateria.resx">
+      <DependentUpon>TelaMateria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaNotas.resx">
+      <DependentUpon>TelaNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaNovaSenha.resx">
+      <DependentUpon>TelaNovaSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaProfessor.resx">
+      <DependentUpon>TelaProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaProfessorCadastro.resx">
+      <DependentUpon>TelaProfessorCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaProfessorMateriaTurma.resx">
+      <DependentUpon>TelaProfessorMateriaTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaSala.resx">
+      <DependentUpon>TelaSala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaTurma.resx">
+      <DependentUpon>TelaTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaTurmaCadastro.resx">
+      <DependentUpon>TelaTurmaCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ColegioImperio.DAL\ColegioImperio.DAL.csproj">
+      <Project>{62661df8-2d0f-4133-8b38-cc3f059dfb09}</Project>
+      <Name>ColegioImperio.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
